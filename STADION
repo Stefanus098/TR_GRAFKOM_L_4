@@ -2065,7 +2065,1031 @@ void sponsor_samping_kanan(){
     glEnd();
 }
 
-    void tribun_set_pojok_kiri_depan(){
+   void tribun_set_depan(){
+    //JEDA TRIBUN DEPAN
+    //JEDA TRIBUN MIRING DEPAN
+    glBegin(GL_QUADS);
+    glColor3f(112/255.0f, 128/255.0f, 145/255.0f);
+    glVertex3f(35, 0.05, 50.0);
+    glVertex3f(-35, 0.05, 50.0);
+    glVertex3f(-35, 5, 55.0);
+    glVertex3f(35, 5, 55.0);
+    glEnd();
+
+    //JEDA TRIBUN DATAR DEPAN
+    glBegin(GL_QUADS);
+    glColor3f(119/255.0f, 136/255.0f, 153/255.0f);
+    glVertex3f(35, 5, 55.0);
+    glVertex3f(-35, 5, 55.0);
+    glVertex3f(-35, 5, 60.0);
+    glVertex3f(35, 5, 60.0);
+    glEnd();
+
+    //TRIBUN LANTAI 1 DEPAN
+    glBegin(GL_QUADS);
+    glColor3f(75/255.0f, 0/255.0f, 130/255.0f);
+    glVertex3f(35, 5, 60.0);
+    glVertex3f(-35, 5, 60.0);
+    glVertex3f(-45, 25, 80.0);
+    glVertex3f(45, 25, 80.0);
+    glEnd();
+
+    //LIST TRIBUN LANTAI 1 DEPAN
+    glBegin(GL_LINE_LOOP);
+    glColor3f(211/255.0f, 211/255.0f, 211/255.0f);
+    glVertex3f(35, 5, 60.0);
+    glVertex3f(-35, 5, 60.0);
+    glVertex3f(-45, 25, 80.0);
+    glVertex3f(45, 25, 80.0);
+    glEnd();
+
+    //JEDA TRIBUN LANTAI 1 DEPAN
+    glBegin(GL_QUADS);
+    glColor3f(211/255.0f, 211/255.0f, 211/255.0f);
+    glVertex3f(-53, 25,90.0);
+    glVertex3f(53, 25,90.0);
+    glVertex3f(45, 25, 80.0);
+    glVertex3f(-45,25,80.0);
+    glEnd();
+
+     //TINGGI JEDA TRIBUN LANTAI 2 DEPAN
+    glBegin(GL_QUADS);
+    glColor3f(211/255.0f, 211/255.0f, 211/255.0f);
+    glVertex3f(-45, 25, 90);
+    glVertex3f(53, 25, 90);
+    glVertex3f(53, 50, 90);
+    glVertex3f(-45, 50, 90);
+    glEnd();
+
+
+    //TRIBUN LANTAI 2 DEPAN
+    glBegin(GL_QUADS);
+    glColor3f(75/255.0f, 0/255.0f, 130/255.0f);
+    glVertex3f(-45, 30, 70);
+    glVertex3f(45, 30, 70);
+    glVertex3f(53, 50, 90);
+    glVertex3f(-45, 50, 90);
+    glEnd();
+
+    //LIST TRIBUN LANTAI 2 DEPAN
+    glBegin(GL_LINE_LOOP);
+    glColor3f(211/255.0f, 211/255.0f, 211/255.0f);
+    glVertex3f(-45, 30, 70);
+    glVertex3f(45, 30, 70);
+    glVertex3f(53, 50, 90);
+    glVertex3f(-45, 50, 90);
+    glEnd();
+
+    //ATAP
+    // TINGI TEMBOK ATAP TRIBUN LANTAI 2 DEPAN
+    glBegin(GL_QUADS);
+    glColor3f(169/255.0f, 169/255.0f, 169/255.0f);
+    glVertex3f(53, 50, 90);
+    glVertex3f(-45, 50, 90);
+    glVertex3f(-45, 55, 90);
+    glVertex3f(53, 55, 90);
+    glEnd();
+
+    // LIST TINGI TEMBOK ATAP TRIBUN LANTAI 2 DEPAN
+    glBegin(GL_LINE_LOOP);
+    glColor3f(0,0,0);
+    glVertex3f(53, 50, 90);
+    glVertex3f(-45, 50, 90);
+    glVertex3f(-45, 55, 90);
+    glVertex3f(53, 55, 90);
+    glEnd();
+
+
+    //ATAP TRIBUN LANTAI 2 DEPAN
+    glBegin(GL_QUADS);
+    glColor3f(211/255.0f, 211/255.0f, 211/255.0f);
+    glVertex3f(-45, 55, 90);
+    glVertex3f(53, 55, 90);
+    glVertex3f(45, 70, 60);
+    glVertex3f(-45, 70, 60);
+    glEnd();
+
+
+    // TEMBOK
+    //TEMBOK DEPAN
+    glBegin(GL_QUADS);
+    glColor3f(211/255.0f, 211/255.0f, 211/255.0f);
+    glVertex3f(-45, 55, 90);
+    glVertex3f(-45, 0.5, 95);
+    glVertex3f(53, 0.5, 95);
+    glVertex3f(53, 55, 90);
+    glEnd();
+    //LIST TEMBOK DEPAN
+    glBegin(GL_LINE_LOOP);
+    glColor3f(0,0,0);
+    glVertex3f(-45, 55, 90);
+    glVertex3f(-45, 0.5, 95);
+    glVertex3f(53, 0.5, 95);
+    glVertex3f(53, 55, 90);
+    glEnd();
+
+
+    //BALOK DEPAN
+    glBegin(GL_QUADS);
+    glColor3f(1,1,1);
+    glVertex3f(-45, 0.5, 95);
+    glVertex3f(-45, 0.5, 100);
+    glVertex3f(53, 0.5, 100);
+    glVertex3f(53, 0.5, 95);
+    glEnd();
+
+    glBegin(GL_QUADS);
+    glColor3f(1,1,1);
+    glVertex3f(-45, 15, 90);
+    glVertex3f(-45, 15, 100);
+    glVertex3f(53, 15, 100);
+    glVertex3f(53, 15, 90);
+    glEnd();
+
+    glBegin(GL_QUADS);
+    glColor3f(1,1,1);
+    glVertex3f(-45, 0.5, 100);
+    glVertex3f(53, 0.5, 100);
+    glVertex3f(53, 15, 100);
+    glVertex3f(-45, 15, 100);
+    glEnd();
+
+    glBegin(GL_QUADS);
+    glColor3f(1,1,1);
+    glVertex3f(-45, 0.5, 100);
+    glVertex3f(-45, 0.5, 95);
+    glVertex3f(-45, 15, 90);
+    glVertex3f(-45, 15, 100);
+    glEnd();
+
+    glBegin(GL_QUADS);
+    glColor3f(1,1,1);
+    glVertex3f(53, 0.5, 100);
+    glVertex3f(53, 0.5, 95);
+    glVertex3f(53, 15, 90);
+    glVertex3f(53, 15, 100);
+    glEnd();
+
+    //PINTU MASUK
+    glBegin(GL_QUADS);
+    glColor3f(0,0,0);
+    glVertex3f(-34, 0.5, 100.1);
+    glVertex3f(-27, 0.5, 100.1);
+    glVertex3f(-27, 13, 100.1);
+    glVertex3f(-34, 13, 100.1);
+    glEnd();
+
+    glBegin(GL_QUADS);
+    glColor3f(0,0,0);
+    glVertex3f(-20, 0.5, 100.1);
+    glVertex3f(-13, 0.5, 100.1);
+    glVertex3f(-13, 13, 100.1);
+    glVertex3f(-20, 13, 100.1);
+    glEnd();
+
+    glBegin(GL_QUADS);
+    glColor3f(0,0,0);
+    glVertex3f(-6, 0.5, 100.1);
+    glVertex3f(1, 0.5, 100.1);
+    glVertex3f(1, 13, 100.1);
+    glVertex3f(-6, 13, 100.1);
+    glEnd();
+
+    glBegin(GL_QUADS);
+    glColor3f(0,0,0);
+    glVertex3f(8, 0.5, 100.1);
+    glVertex3f(15, 0.5, 100.1);
+    glVertex3f(15, 13, 100.1);
+    glVertex3f(8, 13, 100.1);
+    glEnd();
+
+    glBegin(GL_QUADS);
+    glColor3f(0,0,0);
+    glVertex3f(22, 0.5, 100.1);
+    glVertex3f(29, 0.5, 100.1);
+    glVertex3f(29, 13, 100.1);
+    glVertex3f(22, 13, 100.1);
+    glEnd();
+
+    glBegin(GL_QUADS);
+    glColor3f(0,0,0);
+    glVertex3f(36, 0.5, 100.1);
+    glVertex3f(43, 0.5, 100.1);
+    glVertex3f(43, 13, 100.1);
+    glVertex3f(36, 13, 100.1);
+    glEnd();
+
+
+    //BALOK DEPAN ATAS
+    glBegin(GL_QUADS);
+    glColor3f(169/255.0f, 169/255.0f, 169/255.0f);
+    glVertex3f(-45, 55, 90);
+    glVertex3f(-45, 55, 95);
+    glVertex3f(53, 55, 95);
+    glVertex3f(53, 55, 90);
+    glEnd();
+
+    glBegin(GL_QUADS);
+    glColor3f(169/255.0f, 169/255.0f, 169/255.0f);
+    glVertex3f(-45, 40.5, 90);
+    glVertex3f(-45, 40.5, 97);
+    glVertex3f(53, 40.5, 97);
+    glVertex3f(53, 40.5, 90);
+    glEnd();
+
+    glBegin(GL_QUADS);
+    glColor3f(169/255.0f, 169/255.0f, 169/255.0f);
+    glVertex3f(-45, 55, 95);
+    glVertex3f(53, 55, 95);
+    glVertex3f(53, 40.5, 95);
+    glVertex3f(-45, 40.5, 95);
+    glEnd();
+
+    glBegin(GL_QUADS);
+    glColor3f(169/255.0f, 169/255.0f, 169/255.0f);
+    glVertex3f(-45, 55, 90);
+    glVertex3f(-45, 55, 95);
+    glVertex3f(-45, 40.5, 97);
+    glVertex3f(-45, 40.5, 91.2);
+    glEnd();
+
+    glBegin(GL_QUADS);
+    glColor3f(169/255.0f, 169/255.0f, 169/255.0f);
+    glVertex3f(53, 55, 90);
+    glVertex3f(53, 55, 95);
+    glVertex3f(53, 40.5, 97);
+    glVertex3f(53, 40.5, 91.2);
+    glEnd();
+
+
+
+
+
+
+
+
+
+    // LIST ATAP TRIBUN LANTAI 2 DEPAN
+    glBegin(GL_LINE_LOOP);
+    glColor3f(0,0,0);
+    glVertex3f(-45, 55, 90);
+    glVertex3f(53, 55, 90);
+    glVertex3f(45, 70, 60);
+    glVertex3f(-45, 70, 60);
+    glEnd();
+
+
+
+    //JEDA MIRING LANTAI 2 DEPAN
+    glBegin(GL_QUADS);
+    glColor3f(0,0,0);
+    glVertex3f(-45, 30, 70);
+    glVertex3f(45, 30, 70);
+    glVertex3f(45, 25, 80);
+    glVertex3f(-45, 25, 80);
+    glEnd();
+
+    // JEDA DATAR TRIBUN LANTAI 2 DEPAN
+    glBegin(GL_QUADS);
+    glColor3f(211/255.0f, 211/255.0f, 211/255.0f);
+    glVertex3f(-45, 30, 70);
+    glVertex3f(45, 30, 70);
+    glVertex3f(45, 30, 68);
+    glVertex3f(-45, 30, 68);
+    glEnd();
+
+    //  TINGI PAGAR TRIBUN LANTAI 2 DEPAN
+    glBegin(GL_QUADS);
+    glColor3f(147/255.0f, 112/255.0f, 219/255.0f);
+    glVertex3f(-45, 28, 68);
+    glVertex3f(45, 28, 68);
+    glVertex3f(45, 32, 68);
+    glVertex3f(-45, 32, 68);
+    glEnd();
+    //  LIST TINGI PAGAR TRIBUN LANTAI 2 DEPAN
+    glBegin(GL_LINE_LOOP);
+    glColor3f(0,0,0);
+    glVertex3f(-45, 28, 68);
+    glVertex3f(45, 28, 68);
+    glVertex3f(45, 32, 68);
+    glVertex3f(-45, 32, 68);
+    glEnd();
+
+    //TUTUP SEGITIGA KIRI PINGGIR TRIBUN LANTAI 2 DEPAN
+    glBegin(GL_QUADS);
+    glColor3f(169/255.0f, 169/255.0f, 169/255.0f);
+    glVertex3f(-45, 25, 90);
+    glVertex3f(-45, 50, 90);
+    glVertex3f(-45, 30, 70);
+    glVertex3f(-45,25,80.0);
+    glEnd();
+}
+
+void tribun_set_belakang(){
+        //JEDA TRIBUN BELAKANG
+    //JEDA TRIBUN MIRING BELAKANG
+    glBegin(GL_QUADS);
+    glColor3f(112/255.0f, 128/255.0f, 145/255.0f);
+    glVertex3f(35, 0.05, -50.0);
+    glVertex3f(-35, 0.05, -50.0);
+    glVertex3f(-35, 5, -55.0);
+    glVertex3f(35, 5, -55.0);
+    glEnd();
+
+    //JEDA TRIBUN DATAR BELAKANG
+    glBegin(GL_QUADS);
+    glColor3f(119/255.0f, 136/255.0f, 153/255.0f);
+    glVertex3f(35, 5, -55.0);
+    glVertex3f(-35, 5, -55.0);
+    glVertex3f(-35, 5, -60.0);
+    glVertex3f(35, 5, -60.0);
+    glEnd();
+
+    //TRIBUN LANTAI 1 BELAKANG
+    glBegin(GL_QUADS);
+    glColor3f(75/255.0f, 0/255.0f, 130/255.0f);
+    glVertex3f(35, 5, -60.0);
+    glVertex3f(-35, 5, -60.0);
+    glVertex3f(-45, 25, -80.0);
+    glVertex3f(45, 25, -80.0);
+    glEnd();
+    // LIST TRIBUN LANTAI 1 BELAKANG
+    glBegin(GL_LINE_LOOP);
+    glColor3f(211/255.0f, 211/255.0f, 211/255.0f);
+    glVertex3f(35, 5, -60.0);
+    glVertex3f(-35, 5, -60.0);
+    glVertex3f(-45, 25, -80.0);
+    glVertex3f(45, 25, -80.0);
+    glEnd();
+
+    //JEDA TRIBUN LANTAI 1 BELAKANG
+    glBegin(GL_QUADS);
+    glColor3f(211/255.0f, 211/255.0f, 211/255.0f);
+    glVertex3f(-53, 25,-90.0);
+    glVertex3f(53, 25,-90.0);
+    glVertex3f(45, 25, -80.0);
+    glVertex3f(-45,25,-80.0);
+    glEnd();
+
+    //TINGGI JEDA TRIBUN LANTAI 2 BELAKANG
+    glBegin(GL_QUADS);
+    glColor3f(211/255.0f, 211/255.0f, 211/255.0f);
+    glVertex3f(-45, 25, -90);
+    glVertex3f(53, 25, -90);
+    glVertex3f(53, 50, -90);
+    glVertex3f(-45, 50, -90);
+    glEnd();
+
+
+    //TRIBUN LANTAI 2 BELAKANG
+    glBegin(GL_QUADS);
+    glColor3f(75/255.0f, 0/255.0f, 130/255.0f);
+    glVertex3f(-45, 30, -70);
+    glVertex3f(45, 30, -70);
+    glVertex3f(53, 50, -90);
+    glVertex3f(-45, 50, -90);
+    glEnd();
+
+    //LIST TRIBUN LANTAI 2 BELAKANG
+    glBegin(GL_LINE_LOOP);
+    glColor3f(211/255.0f, 211/255.0f, 211/255.0f);
+    glVertex3f(-45, 30, -70);
+    glVertex3f(45, 30, -70);
+    glVertex3f(53, 50, -90);
+    glVertex3f(-45, 50, -90);
+    glEnd();
+
+    //ATAP
+    // TINGI TEMBOK ATAP TRIBUN LANTAI 2 BELAKANG
+    glBegin(GL_QUADS);
+    glColor3f(169/255.0f, 169/255.0f, 169/255.0f);
+    glVertex3f(53, 50, -90);
+    glVertex3f(-45, 50, -90);
+    glVertex3f(-45, 55, -90);
+    glVertex3f(53, 55, -90);
+    glEnd();
+    // LIST TINGI TEMBOK ATAP TRIBUN LANTAI 2 BELAKANG
+    glBegin(GL_LINE_LOOP);
+    glColor3f(0,0,0);
+    glVertex3f(53, 50, -90);
+    glVertex3f(-45, 50, -90);
+    glVertex3f(-45, 55, -90);
+    glVertex3f(53, 55, -90);
+    glEnd();
+
+    //ATAP TRIBUN LANTAI 2 BELAKANG
+    glBegin(GL_QUADS);
+    glColor3f(211/255.0f, 211/255.0f, 211/255.0f);
+    glVertex3f(-45, 55, -90);
+    glVertex3f(53, 55, -90);
+    glVertex3f(45, 70, -60);
+    glVertex3f(-45, 70, -60);
+    glEnd();
+    //LIST ATAP TRIBUN LANTAI 2 BELAKANG
+    glBegin(GL_LINE_LOOP);
+    glColor3f(0,0,0);
+    glVertex3f(-45, 55, -90);
+    glVertex3f(53, 55, -90);
+    glVertex3f(45, 70, -60);
+    glVertex3f(-45, 70, -60);
+    glEnd();
+
+    //TEMBOK
+    //TEMBOK BELAKANG
+    glBegin(GL_QUADS);
+    glColor3f(211/255.0f, 211/255.0f, 211/255.0f);
+    glVertex3f(-45, 55, -90);
+    glVertex3f(-45, 0.5, -95);
+    glVertex3f(53, 0.5, -95);
+    glVertex3f(53, 55, -90);
+    glEnd();
+    //LIST TEMBOK BELAKANG
+    glBegin(GL_LINE_LOOP);
+    glColor3f(0,0,0);
+    glVertex3f(-45, 55, -90);
+    glVertex3f(-45, 0.5, -95);
+    glVertex3f(53, 0.5, -95);
+    glVertex3f(53, 55, -90);
+    glEnd();
+
+
+    //JEDA MIRING LANTAI 2 BELAKANG
+    glBegin(GL_QUADS);
+    glColor3f(0,0,0);
+    glVertex3f(-45, 30, -70);
+    glVertex3f(45, 30, -70);
+    glVertex3f(45, 25, -80);
+    glVertex3f(-45, 25, -80);
+    glEnd();
+
+    // JEDA DATAR TRIBUN LANTAI 2 BELAKANG
+    glBegin(GL_QUADS);
+    glColor3f(211/255.0f, 211/255.0f, 211/255.0f);
+    glVertex3f(-45, 30, -70);
+    glVertex3f(45, 30, -70);
+    glVertex3f(45, 30, -68);
+    glVertex3f(-45, 30, -68);
+    glEnd();
+
+    //  TINGI PAGAR TRIBUN LANTAI 2 BELAKANG
+    glBegin(GL_QUADS);
+    glColor3f(147/255.0f, 112/255.0f, 219/255.0f);
+    glVertex3f(-45, 28, -68);
+    glVertex3f(45, 28, -68);
+    glVertex3f(45, 32, -68);
+    glVertex3f(-45, 32, -68);
+    glEnd();
+    // LIST TINGI PAGAR TRIBUN LANTAI 2 BELAKANG
+    glBegin(GL_LINE_LOOP);
+    glColor3f(0,0,0);
+    glVertex3f(-45, 28, -68);
+    glVertex3f(45, 28, -68);
+    glVertex3f(45, 32, -68);
+    glVertex3f(-45, 32, -68);
+    glEnd();
+
+
+    //TUTUP SEGITIGA KIRI PINGGIR TRIBUN LANTAI 2 BELAKANG
+    glBegin(GL_QUADS);
+    glColor3f(169/255.0f, 169/255.0f, 169/255.0f);
+    glVertex3f(-45, 25, -90);
+    glVertex3f(-45, 50, -90);
+    glVertex3f(-45, 30, -70);
+    glVertex3f(-45,25,-80.0);
+    glEnd();
+}
+
+void tribun_set_kanan(){
+        //JEDA TRIBUN KANAN
+    //JEDA TRIBUN MIRING KANAN
+    glBegin(GL_QUADS);
+    glColor3f(112/255.0f, 128/255.0f, 145/255.0f);
+    glVertex3f(50.0, 0.05, -38.0);
+    glVertex3f(55.0, 5.0, -38.0);
+    glVertex3f(55.0, 5.0, 38.0);
+    glVertex3f(50.0, 0.05, 38.0);
+    glEnd();
+
+    //JEDA TRIBUN DATAR KANAN
+    glBegin(GL_QUADS);
+    glColor3f(119/255.0f, 136/255.0f, 153/255.0f);
+    glVertex3f(55.0, 5, -38.0);
+    glVertex3f(60.0, 5, -38.0);
+    glVertex3f(60.0, 5, 38.0);
+    glVertex3f(55.0, 5, 38.0);
+    glEnd();
+
+    //TRIBUN LANTAI 1 KANAN
+    glBegin(GL_QUADS);
+    glColor3f(75/255.0f, 0/255.0f, 130/255.0f);
+    glVertex3f(60.0, 5, -38.0);
+    glVertex3f(80.0, 25, -48.0);
+    glVertex3f(80.0, 25, 48.0);
+    glVertex3f(60.0, 5, 38.0);
+    glEnd();
+
+    //LIST TRIBUN LANTAI 1 KANAN
+    glBegin(GL_LINE_LOOP);
+    glColor3f(211/255.0f, 211/255.0f, 211/255.0f);
+    glVertex3f(60.0, 5, -38.0);
+    glVertex3f(80.0, 25, -48.0);
+    glVertex3f(80.0, 25, 48.0);
+    glVertex3f(60.0, 5, 38.0);
+    glEnd();
+
+
+    //JEDA TRIBUN LANTAI 1 KANAN
+    glBegin(GL_QUADS);
+    glColor3f(211/255.0f, 211/255.0f, 211/255.0f);
+    glVertex3f(80.0, 25, -48.0);
+    glVertex3f(80.0, 25, 48.0);
+    glVertex3f(90.0, 25, 56.0);
+    glVertex3f(90.0, 25, -56.0);
+    glEnd();
+
+    //TINGGI JEDA TRIBUN LANTAI 2 KANAN
+    glBegin(GL_QUADS);
+    glColor3f(211/255.0f, 211/255.0f, 211/255.0f);
+    glVertex3f(90.0, 25, 56.0);
+    glVertex3f(90.0, 25, -56.0);
+    glVertex3f(90.0, 50, -56.0);
+    glVertex3f(90.0, 50, 56.0);
+    glEnd();
+
+    // LIST TINGGI JEDA TRIBUN LANTAI 2 KANAN
+    glBegin(GL_LINE_LOOP);
+    glColor3f(0,0,0);
+    glVertex3f(90.0, 25, 56.0);
+    glVertex3f(90.0, 25, -56.0);
+    glVertex3f(90.0, 50, -56.0);
+    glVertex3f(90.0, 50, 56.0);
+    glEnd();
+
+     //TEMBOK
+     //TEMBOK KANAN
+    glBegin(GL_QUADS);
+    glColor3f(211/255.0f, 211/255.0f, 211/255.0f);
+    glVertex3f(90.0, 55, -56.0);
+    glVertex3f(95.0, 0.5, -56.0);
+    glVertex3f(95.0, 0.5, 56.0);
+    glVertex3f(90.0, 55, 56.0);
+    glEnd();
+
+    //KUBUS
+    glBegin(GL_QUADS);
+    glColor3f(1,1,1);
+    glVertex3f(95.1, 0.5,  46.0);
+    glVertex3f(105.0, 0.5, 46.0);
+    glVertex3f(105.0, 0.5, -46.0);
+    glVertex3f(95.1, 0.5, -46.0);
+    glEnd();
+
+    glBegin(GL_QUADS);
+    glColor3f(1,1,1);
+    glVertex3f(105.0, 0.5, 46.0);
+    glVertex3f(105.0, 15.5, 46.0);
+    glVertex3f(105.0, 15.5, -46.0);
+    glVertex3f(105.0, 0.5, -46.0);
+    glEnd();
+
+    glBegin(GL_QUADS);
+    glColor3f(1,1,1);
+    glVertex3f(93.1, 15.5,  46.0);
+    glVertex3f(105.0, 15.5, 46.0);
+    glVertex3f(105.0, 15.5, -46.0);
+    glVertex3f(93.1, 15.5, -46.0);
+    glEnd();
+
+    glBegin(GL_QUADS);
+    glColor3f(1,1,1);
+    glVertex3f(95.1, 0.5,  46.0);
+    glVertex3f(105.0, 0.5, 46.0);
+    glVertex3f(105.0, 15.5, 46.0);
+    glVertex3f(93.1, 15.5, 46.0);
+    glEnd();
+
+     glBegin(GL_QUADS);
+    glColor3f(1,1,1);
+    glVertex3f(95.1, 0.5,  -46.0);
+    glVertex3f(105.0, 0.5, -46.0);
+    glVertex3f(105.0, 15.5, -46.0);
+    glVertex3f(93.1, 15.5, -46.0);
+    glEnd();
+
+
+
+
+
+    //LIST TEMBOK KANAN
+    glBegin(GL_LINE_LOOP);
+    glColor3f(0,0,0);
+    glVertex3f(90.0, 55, -56.0);
+    glVertex3f(95.0, 0.5, -56.0);
+    glVertex3f(95.0, 0.5, 56.0);
+    glVertex3f(90.0, 55, 56.0);
+    glEnd();
+
+    //TRIBUN LANTAI 2 KANAN
+    glBegin(GL_QUADS);
+    glColor3f(75/255.0f, 0/255.0f, 130/255.0f);
+    glVertex3f(70.0, 30, -38.0);
+    glVertex3f(90.0, 50, -56.0);
+    glVertex3f(90.0, 50, 56.0);
+    glVertex3f(70.0, 30, 38.0);
+    glEnd();
+
+    //LIST TRIBUN LANTAI 2 KANAN
+    glBegin(GL_LINE_LOOP);
+    glColor3f(211/255.0f, 211/255.0f, 211/255.0f);
+    glVertex3f(70.0, 30, -38.0);
+    glVertex3f(90.0, 50, -56.0);
+    glVertex3f(90.0, 50, 56.0);
+    glVertex3f(70.0, 30, 38.0);
+    glEnd();
+
+
+        //ATAP
+    // TINGI TEMBOK ATAP TRIBUN LANTAI 2 KANAN
+    glBegin(GL_QUADS);
+    glColor3f(169/255.0f, 169/255.0f, 169/255.0f);
+    glVertex3f(90.0, 50, -56.0);
+    glVertex3f(90.0, 50, 56.0);
+    glVertex3f(90.0, 55, 56.0);
+    glVertex3f(90.0, 55, -56.0);
+    glEnd();
+    // LIST TINGI TEMBOK ATAP TRIBUN LANTAI 2 KANAN
+    glBegin(GL_LINE_LOOP);
+    glColor3f(0,0,0);
+    glVertex3f(90.0, 50, -56.0);
+    glVertex3f(90.0, 50, 56.0);
+    glVertex3f(90.0, 55, 56.0);
+    glVertex3f(90.0, 55, -56.0);
+    glEnd();
+
+    //ATAP TRIBUN LANTAI 2 KANAN
+    glBegin(GL_QUADS);
+    glColor3f(211/255.0f, 211/255.0f, 211/255.0f);
+    glVertex3f(90.0, 55, 56.0);
+    glVertex3f(90.0, 55, -56.0);
+    glVertex3f(60.0, 70, -38.0);
+    glVertex3f(60.0, 70, 38.0);
+    glEnd();
+    //LIST ATAP TRIBUN LANTAI 2 KANAN
+    glBegin(GL_LINE_LOOP);
+    glColor3f(0,0,0);
+    glVertex3f(90.0, 55, 56.0);
+    glVertex3f(90.0, 55, -56.0);
+    glVertex3f(60.0, 70, -38.0);
+    glVertex3f(60.0, 70, 38.0);
+    glEnd();
+
+
+
+
+    //JEDA MIRING LANTAI 2 KANAN
+    glBegin(GL_QUADS);
+    glColor3f(0,0,0);
+    glVertex3f(70.0, 30, -38.0);
+    glVertex3f(70.0, 30, 38.0);
+    glVertex3f(80.0, 25, 48.0);
+    glVertex3f(80.0, 25, -48.0);
+    glEnd();
+
+    // JEDA DATAR TRIBUN LANTAI 2 KANAN
+    glBegin(GL_QUADS);
+    glColor3f(211/255.0f, 211/255.0f, 211/255.0f);
+    glVertex3f(70.0, 30, -38.0);
+    glVertex3f(70.0, 30, 38.0);
+    glVertex3f(68.0, 30, 38.0);
+    glVertex3f(68.0, 30, -38.0);
+    glEnd();
+
+    //  TINGGI PAGAR TRIBUN LANTAI 2 KANAN
+    glBegin(GL_QUADS);
+    glColor3f(147/255.0f, 112/255.0f, 219/255.0f);
+    glVertex3f(68.0, 28, 38.0);
+    glVertex3f(68.0, 28, -38.0);
+    glVertex3f(68.0, 32, -38.0);
+    glVertex3f(68.0, 32, 38.0);
+    glEnd();
+    //  LIST TINGGI PAGAR TRIBUN LANTAI 2 KANAN
+    glBegin(GL_LINE_LOOP);
+    glColor3f(0,0,0);
+    glVertex3f(68.0, 28, 38.0);
+    glVertex3f(68.0, 28, -38.0);
+    glVertex3f(68.0, 32, -38.0);
+    glVertex3f(68.0, 32, 38.0);
+    glEnd();
+
+}
+
+void tribun_set_kiri(){
+    //JEDA TRIBUN KIRI
+    //JEDA TRIBUN MIRING KIRI
+    glBegin(GL_QUADS);
+    glColor3f(112/255.0f, 128/255.0f, 145/255.0f);
+    glVertex3f(-50.0, 0.05, -38.0);
+    glVertex3f(-55.0, 5.0, -38.0);
+    glVertex3f(-55.0, 5.0, 38.0);
+    glVertex3f(-50.0, 0.05, 38.0);
+    glEnd();
+
+    //JEDA TRIBUN DATAR KIRI
+    glBegin(GL_QUADS);
+    glColor3f(119/255.0f, 136/255.0f, 153/255.0f);
+    glVertex3f(-55.0, 5, -38.0);
+    glVertex3f(-60.0, 5, -38.0);
+    glVertex3f(-60.0, 5, 38.0);
+    glVertex3f(-55.0, 5, 38.0);
+    glEnd();
+
+    //TRIBUN LANTAI 1 KIRI
+    glBegin(GL_QUADS);
+    glColor3f(75/255.0f, 0/255.0f, 130/255.0f);
+    glVertex3f(-60.0, 5, -38.0);
+    glVertex3f(-80.0, 25, -48.0);
+    glVertex3f(-80.0, 25, 48.0);
+    glVertex3f(-60.0, 5, 38.0);
+    glEnd();
+
+    //LIST TRIBUN LANTAI 1 KIRI
+    glBegin(GL_LINE_LOOP);
+    glColor3f(211/255.0f, 211/255.0f, 211/255.0f);
+    glVertex3f(-60.0, 5, -38.0);
+    glVertex3f(-80.0, 25, -48.0);
+    glVertex3f(-80.0, 25, 48.0);
+    glVertex3f(-60.0, 5, 38.0);
+    glEnd();
+
+    //JEDA TRIBUN LANTAI 1 KIRI
+    glBegin(GL_QUADS);
+    glColor3f(169/255.0f, 169/255.0f, 169/255.0f);
+    glVertex3f(-80.0, 25, -48.0);
+    glVertex3f(-80.0, 25, 48.0);
+    glVertex3f(-90.0, 25, 56.0);
+    glVertex3f(-90.0, 25, -56.0);
+    glEnd();
+
+    //TINGI SPONSOR TRIBUN LANTAI 1 KIRI
+    glBegin(GL_QUADS);
+    glColor3f(75/255.0f, 0/255.0f, 130/255.0f);
+    glVertex3f(-90.0, 25, -56.0);
+    glVertex3f(-90.0, 25, 56.0);
+    glVertex3f(-90.0, 30, 56.0);
+    glVertex3f(-90.0, 30, -56.0);
+    glEnd();
+    //LIST TINGI SPONSOR TRIBUN LANTAI 1 KIRI
+    glBegin(GL_LINE_LOOP);
+    glColor3f(0,0,0);
+    glVertex3f(-90.0, 25, -56.0);
+    glVertex3f(-90.0, 25, 56.0);
+    glVertex3f(-90.0, 30, 56.0);
+    glVertex3f(-90.0, 30, -56.0);
+    glEnd();
+
+
+    //TEMBOK
+    //TEMBOK KIRI
+    glBegin(GL_QUADS);
+    glColor3f(211/255.0f, 211/255.0f, 211/255.0f);
+    glVertex3f(-90.0, 25, -56.0);
+    glVertex3f(-90.0, 25, 56.0);
+    glVertex3f(-95, 0.5, 56.0);
+    glVertex3f(-95, 0.5, -56.0);
+    glEnd();
+
+    //KUBUS
+    glBegin(GL_QUADS);
+    glColor3f(1,1,1);
+    glVertex3f(-95.1, 0.5,  46.0);
+    glVertex3f(-105.0, 0.5, 46.0);
+    glVertex3f(-105.0, 0.5, -46.0);
+    glVertex3f(-95.1, 0.5, -46.0);
+    glEnd();
+
+    glBegin(GL_QUADS);
+    glColor3f(1,1,1);
+    glVertex3f(-105.0, 0.5, 46.0);
+    glVertex3f(-105.0, 15.5, 46.0);
+    glVertex3f(-105.0, 15.5, -46.0);
+    glVertex3f(-105.0, 0.5, -46.0);
+    glEnd();
+
+    glBegin(GL_QUADS);
+    glColor3f(1,1,1);
+    glVertex3f(-93.1, 15.5,  46.0);
+    glVertex3f(-105.0, 15.5, 46.0);
+    glVertex3f(-105.0, 15.5, -46.0);
+    glVertex3f(-93.1, 15.5, -46.0);
+    glEnd();
+
+    glBegin(GL_QUADS);
+    glColor3f(1,1,1);
+    glVertex3f(-95.1, 0.5,  46.0);
+    glVertex3f(-105.0, 0.5, 46.0);
+    glVertex3f(-105.0, 15.5, 46.0);
+    glVertex3f(-93.1, 15.5, 46.0);
+    glEnd();
+
+     glBegin(GL_QUADS);
+    glColor3f(1,1,1);
+    glVertex3f(-95.1, 0.5,  -46.0);
+    glVertex3f(-105.0, 0.5, -46.0);
+    glVertex3f(-105.0, 15.5, -46.0);
+    glVertex3f(-93.1, 15.5, -46.0);
+    glEnd();
+
+    //KUBUS KECIL
+    glBegin(GL_QUADS);
+    glColor3f(1,1,1);
+    glVertex3f(-105.1, 0.5,  36.0);
+    glVertex3f(-115.0, 0.5, 36.0);
+    glVertex3f(-115.0, 0.5, -36.0);
+    glVertex3f(-105.1, 0.5, -36.0);
+    glEnd();
+
+    glBegin(GL_QUADS);
+    glColor3f(1,1,1);
+    glVertex3f(-115.0, 0.5, 36.0);
+    glVertex3f(-115.0, 15.5, 36.0);
+    glVertex3f(-115.0, 15.5, -36.0);
+    glVertex3f(-115.0, 0.5, -36.0);
+    glEnd();
+
+    glBegin(GL_QUADS);
+    glColor3f(1,1,1);
+    glVertex3f(-105.1, 15.5,  36.0);
+    glVertex3f(-115.0, 15.5, 36.0);
+    glVertex3f(-115.0, 15.5, -36.0);
+    glVertex3f(-105.1, 15.5, -36.0);
+    glEnd();
+
+    glBegin(GL_QUADS);
+    glColor3f(1,1,1);
+    glVertex3f(-105.1, 0.5,  36.0);
+    glVertex3f(-115.0, 0.5, 36.0);
+    glVertex3f(-115.0, 15.5, 36.0);
+    glVertex3f(-105.1, 15.5, 36.0);
+    glEnd();
+
+     glBegin(GL_QUADS);
+    glColor3f(1,1,1);
+    glVertex3f(-105.1, 0.5,  -36.0);
+    glVertex3f(-115.0, 0.5, -36.0);
+    glVertex3f(-115.0, 15.5, -36.0);
+    glVertex3f(-105.1, 15.5, -36.0);
+    glEnd();
+
+
+    //LIST TEMBOK KIRI
+    glBegin(GL_LINE_LOOP);
+    glColor3f(0,0,0);
+    glVertex3f(-90.0, 25, -56.0);
+    glVertex3f(-90.0, 25, 56.0);
+    glVertex3f(-95, 0.5, 56.0);
+    glVertex3f(-95, 0.5, -56.0);
+    glEnd();
+
+    //TIANG LAMPU LAPANGAN  DEPAN KIRI
+    glBegin(GL_QUADS);
+    glColor3f(0,0,0);
+    glVertex3f(-100.0, -0.3, 56.0);
+    glVertex3f(-95.0, -0.3, 56.0);
+    glVertex3f(-95.0, 90.0, 56.0);
+    glVertex3f(-100.0, 90.0, 56.0);
+    glEnd();
+
+    glBegin(GL_QUADS);
+    glColor3f(0,0,0);
+    glVertex3f(-100.0, -0.3, 56.0);
+    glVertex3f(-100.0, -0.3, 51.0);
+    glVertex3f(-100.0, 90.0, 51.0);
+    glVertex3f(-100.0, 90.0, 56.0);
+    glEnd();
+
+    glBegin(GL_QUADS);
+    glColor3f(0,0,0);
+    glVertex3f(-100.0, -0.3, 51.0);
+    glVertex3f(-95.0, -0.3, 51.0);
+    glVertex3f(-95.0, 90.0, 51.0);
+    glVertex3f(-100.0, 90.0, 51.0);
+    glEnd();
+
+    glBegin(GL_QUADS);
+    glColor3f(0,0,0);
+    glVertex3f(-95.0, -0.3, 56.0);
+    glVertex3f(-95.0, -0.3, 51.0);
+    glVertex3f(-95.0, 90.0, 51.0);
+    glVertex3f(-95.0, 90.0, 56.0);
+    glEnd();
+
+    //LAMPU LAPANGAN  DEPAN KIRI
+    glBegin(GL_QUADS);
+    glColor3f(1,1,1);
+    glVertex3f(-95.0, 50.0, 56.0);
+    glVertex3f(-90.0, 50.0, 56.0);
+    glVertex3f(-90.0, 90.0, 56.0);
+    glVertex3f(-95.0, 90.0, 56.0);
+    glEnd();
+
+    glBegin(GL_QUADS);
+    glColor3f(1,1,1);
+    glVertex3f(-94.9, 50.0, 56.0);
+    glVertex3f(-94.9, 50.0, 51.0);
+    glVertex3f(-94.9, 90.0, 51.0);
+    glVertex3f(-94.9, 90.0, 56.0);
+    glEnd();
+
+    glBegin(GL_QUADS);
+    glColor3f(1,1,1);
+    glVertex3f(-95.0, 50.0, 51.0);
+    glVertex3f(-90.0, 50.0, 51.0);
+    glVertex3f(-90.0, 90.0, 51.0);
+    glVertex3f(-95.0, 90.0, 51.0);
+    glEnd();
+
+    glBegin(GL_QUADS);
+    glColor3f(1,1,1);
+    glVertex3f(-90.0, 50.0, 56.0);
+    glVertex3f(-90.0, 50.0, 51.0);
+    glVertex3f(-90.0, 90.0, 51.0);
+    glVertex3f(-90.0, 90.0, 56.0);
+    glEnd();
+
+    //TIANG LAMPU LAPANGAN  BELAKANG KIRI
+    glBegin(GL_QUADS);
+    glColor3f(0,0,0);
+    glVertex3f(-100.0, -0.3, -56.0);
+    glVertex3f(-95.0, -0.3, -56.0);
+    glVertex3f(-95.0, 90.0, -56.0);
+    glVertex3f(-100.0, 90.0, -56.0);
+    glEnd();
+
+    glBegin(GL_QUADS);
+    glColor3f(0,0,0);
+    glVertex3f(-100.0, -0.3, -56.0);
+    glVertex3f(-100.0, -0.3, -51.0);
+    glVertex3f(-100.0, 90.0, -51.0);
+    glVertex3f(-100.0, 90.0, -56.0);
+    glEnd();
+
+    glBegin(GL_QUADS);
+    glColor3f(0,0,0);
+    glVertex3f(-100.0, -0.3, -51.0);
+    glVertex3f(-95.0, -0.3, -51.0);
+    glVertex3f(-95.0, 90.0, -51.0);
+    glVertex3f(-100.0, 90.0, -51.0);
+    glEnd();
+
+   glBegin(GL_QUADS);
+    glColor3f(0,0,0);
+    glVertex3f(-95.0, -0.3, -56.0);
+    glVertex3f(-95.0, -0.3, -51.0);
+    glVertex3f(-95.0, 90.0, -51.0);
+    glVertex3f(-95.0, 90.0, -56.0);
+    glEnd();
+
+    //LAMPU LAPANGAN BELAKANG KIRI
+    glBegin(GL_QUADS);
+    glColor3f(1,1,1);
+    glVertex3f(-95.0, 50.0, -56.0);
+    glVertex3f(-90.0, 50.0, -56.0);
+    glVertex3f(-90.0, 90.0, -56.0);
+    glVertex3f(-95.0, 90.0, -56.0);
+    glEnd();
+
+    glBegin(GL_QUADS);
+    glColor3f(1,1,1);
+    glVertex3f(-94.9, 50.0, -56.0);
+    glVertex3f(-94.9, 50.0, -51.0);
+    glVertex3f(-94.9, 90.0, -51.0);
+    glVertex3f(-94.9, 90.0, -56.0);
+    glEnd();
+
+    glBegin(GL_QUADS);
+    glColor3f(1,1,1);
+    glVertex3f(-95.0, 50.0, -51.0);
+    glVertex3f(-90.0, 50.0, -51.0);
+    glVertex3f(-90.0, 90.0, -51.0);
+    glVertex3f(-95.0, 90.0, -51.0);
+    glEnd();
+
+    glBegin(GL_QUADS);
+    glColor3f(1,1,1);
+    glVertex3f(-90.0, 50.0, -56.0);
+    glVertex3f(-90.0, 50.0, -51.0);
+    glVertex3f(-90.0, 90.0, -51.0);
+    glVertex3f(-90.0, 90.0, -56.0);
+    glEnd();
+
+
+
+
+
+
+}
+
+void tribun_set_pojok_kiri_depan(){
     //JEDA TRIBUN KIRI POJOK DEPAN
     //JEDA POJOK MIRING 1
     glBegin(GL_QUADS);
